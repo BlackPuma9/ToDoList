@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<link rel="stylesheet" href="style.css">
+        <title>TO DO list</title>
+
+        <!-- Подключение внешнего скрипта -->
+		<script src="script.js"></script>
+    </head>
+
+    <body>
+		<div class="wrapper">
+			
+			<main class="main">
+				<h1 class="list-title">Your task list
+				</h1>
+				
+				<form>
+					<label for="input_field">Please write down the task that you want to be done:</label><br>
+					<input type="text" id="input_field" name="input_field">
+					<button onclick="submitNewTask()" type="submit" form="task1" value="Submit">Submit</button>
+					
+					<p id="addtoparagraph"></p><br>
+				</form>
+				
+			</main>
+			<footer class="footer">
+			</footer>
+
+		</div>
+    </body>
+
+</html>
