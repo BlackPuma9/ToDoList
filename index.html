@@ -11,25 +11,19 @@
     </head>
 
     <body>
-		<div class="wrapper">
-			
-			<main class="main">
+		<div id="inputdiv"class="header">
 				<h1 class="list-title">Your task list
 				</h1>
+				<input type="text" id="myInput" placeholder="Write down your task">
+				<button onclick="submitTask()" class="submitBtn">Submit</button> 
+		</div>
+		
+		<ul id="myUL">
+		</ul>
 				
-				<form>
-					<label for="input_field">Please write down the task that you want to be done:</label><br>
-					<input type="text" id="input_field" name="input_field">
-					<button onclick="submitNewTask()" type="submit" form="task1" value="Submit">Submit</button>
-					
-					<p id="addtoparagraph"></p><br>
-				</form>
-				
-			</main>
 			<footer class="footer">
 			</footer>
 
-		</div>
     </body>
 
 </html>
