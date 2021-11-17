@@ -1,14 +1,18 @@
 // Create a new list item when clicking on the "Add" button
 function submitTask() {
+	
   let li = document.createElement("li");
-  let inputValue = document.getElementById("myInput").value;
+  let ul = document.getElementsByTagName("ul")[0];
+  let inputValue = ++ul.children.length + ". " + document.getElementById("myInput").value;
   let t = document.createTextNode(inputValue);
   li.appendChild(t);
+  
   if (inputValue === '') {
     alert("You must write something!");
   } else {
     document.getElementById("myUL").appendChild(li);
   }
+  
   document.getElementById("myInput").value = "";
 
   let buttonDone = document.createElement("button");
